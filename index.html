@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Word and Character Counter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!---------------------------------------------------
+         Headings Start 
+    ------------------------------------------------------>
+    <h1 class="main_heading">Simple Word and Character Counter</h1>
+    <p class="main_P">Simple and Free online word and character counter tool (No Limits)</p>
+    <!---------------------------------------
+         Headings End 
+    ------------------------------------------>
+
+    <!------------------------------------------
+         Main Content Area Start 
+    ----------------------------------------------->
+    <div class="mainContents">
+        <!-- Text Box -->
+        <textarea id="mainText" placeholder="Type or Paste..."></textarea>
+        <!-- All Counting Boxes Start -->
+        <div class="counting_group">
+            <div class="counting">
+                <h3 class="headings">Characters</h3>
+                <h2 class="counted" id="Characters">0</h2>
+            </div>
+            <div class="counting">
+                <h3 class="headings">Words</h3>
+                <h2 class="counted" id="Words">0</h2>
+
+            </div>
+            <div class="counting">
+                <h3 class="headings">Sentences</h3>
+                <h2 class="counted" id="Sentences">0</h2>
+            </div>
+        </div>
+        <!-- All Counting Boxes Start -->
+    </div>
+        <!----------------------------------------
+             Main Content Area End 
+        ------------------------------------------------>
+
+    <!-- How to use instruction -->
+    <p class="howToUse">Enter (by typing directly or using copy paste) your text and find out how many words and characters it contains.</p>
+    
+    <!----------------------------------------
+         Question Section Start 
+    ----------------------------------------------->
+    <div class="questions">
+
+            <!--**************************
+                 Question No. 1 Start
+            ******************************-->
+        <div class="question_1">
+            <!-- Question No.1 -->
+            <h3>Why would you need an online word counter? <i class="fas fa-plus-square plusIcon" id="plusIcon_1"></i></h3>
+             <!-- Answer of Question No.1 Start -->
+            <div class="answer_question_1">
+                <p>Online word counters are a perfect tool for anyone who needs to keep a count of their words and characters, but doesn’t use Microsoft Word. Imagine writing a piece and having to manually count the words! Not only will it take forever, but there’s a chance you won’t be wholly accurate.</p>
+                <p>This tool is also a good way to assess your words per minute typing rate. Simply time yourself timing for five minutes. Type into the box on the online word counter. When the time is up, divide your total word count by five, and you have your average words per minute rate.</p>
+                 <!-- Answer of Question No.1 End -->
+            </div>
+        </div>
+            <!--******************************
+                Question No. 1 End 
+            ************************************-->
+
+            <!--*****************************
+                 Question No. 2 Start 
+            **********************************-->
+        <div class="question_2">
+             <!-- Question No.2 -->
+            <h3>Whom is this word counting tool for? <i class="fas fa-plus-square plusIcon" id="plusIcon_2"></i></h3>
+            <!-- Answer of Question No.2 Start -->
+            <div class="answer_question_2">
+                <ul>
+                    <li><h4>Bloggers/Content Writers</h4>
+                        <p>You could be writing an article for someone else where the word count is important, but even if it’s for your own site, this tool can be fantastic for your SEO. For example, the body of text should be a minimum of 300 words, and the title should be less than 70 characters to rank effectively.</p>
+                    </li>
+                    <li><h4>Teachers/Students</h4>
+                        <p>As a student, you will often be expected to write assignments with specific word counts. Although a bit of leeway is usually given, if you are well off the count either way, you could lose marks. What a waste of you time and effort! As a lecturer, you can use this tool to ensure your students’ assignments are the correct length.</p>
+                    </li>
+                    <li><h4>Other Uses</h4>
+                        <p>In many work places, you will be expected to write pieces of certain lengths at times, for example, lawyers, secretaries etc.</p>
+                    </li>
+                </ul>
+                <!-- Answer of Question No.2 End -->
+            </div>
+        </div>
+            <!--*************************
+                 Question No. 1 End 
+            *******************************-->
+    </div>
+    <!------------------------------------------
+         Question Section Start 
+    ----------------------------------------------->
+
+    <!-- External Script  -->
+    <script src="main.js"></script>
+</body>
+</html>

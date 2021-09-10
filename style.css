@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Colors in variable */
+:root{
+    --PrymariColor:#74b9ff;
+    --secondaryColor:#d63031;
+    --backgroundColor:#fff;
+    --fontColor:#2d3436;
+}
+body{
+    background:var(--PrymariColor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*========================
+ Main Heading Area Start 
+ ==========================*/
+.main_heading{
+    color: var(--secondaryColor);
+    margin: 13px 0 6px 0;
+    text-align: center;
+}
+.main_P{
+    color: var(--fontColor);
+    margin: 0 0 13px 0;
+    text-align: center;
+}
+/*======================
+ Main Heading Area End 
+ =======================*/
+
+ /*======================
+ Main Contents Area Start 
+ =======================*/
+.mainContents{
+    display: flex;
+    justify-content: center;
+}
+
+    /* All Counting Divs Start*/
+.counting_group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.counting{
+    width: 200px;
+    height: 105px;
+    border: 2px solid var(--fontColor);
+    margin: 5px;
+    flex-direction: column;
+    text-transform: uppercase;
+    background-color: var(--backgroundColor);
+}
+.headings{
+    text-align: center;
+    border-bottom: 2px solid var(--fontColor);
+    padding: 9px 0;
+    color: var(--secondaryColor);
+}
+.counted{
+    text-align: center;
+    margin-top: 14px;
+    color: #00b894;
+}
+  /* All Counting Divs End*/
+
+  /* Main Text Box */
+#mainText{
+    margin:0 20px 0 20px;
+    height: 22rem;
+    width: 50rem;
+    border: 1.5px solid var(--fontColor);
+    background-color: var(--backgroundColor);
+    overflow: auto;
+    padding: 10px;
+    outline: none;
+    color: var(--secondaryColor);
+    resize: none;
+    font-size: 1.2rem;
+}
+/*======================
+ Main Contents Area End 
+ =======================*/
+
+ /* How to use Instructions */
+.howToUse{
+    text-align: center;
+    padding-top: 8px;
+    color: var(--fontColor);
+}
+
+/*========================
+ Question Section Start 
+==================================*/
+.questions{
+    margin: 10px;
+    padding: 8px;
+    display: flex;
+    overflow: hidden;
+}
+.question_1,.question_2{
+    width: 50%;
+    margin: 0 7px;
+    padding: 5px;
+}
+
+/* Main Questions */
+:is(.question_1,.question_2) >h3{
+    color: var(--secondaryColor);
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    background-color: var(--backgroundColor);
+    border-radius: 5px;
+    z-index: 10;
+}
+.plusIcon{
+    margin-left: auto;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--fontColor);
+}
+.plusIcon:hover{
+    color: var(--secondaryColor);
+}
+.plusIcon:active{
+    color: #d47463;
+}
+
+/* Question Answer Area Start */
+:is(.answer_question_1,.answer_question_2){
+    background-color: var(--backgroundColor);
+    border-radius: 5px;
+    display: none;
+    animation:animQuestion;
+    animation: animQuestion 1s 1 alternate;
+    user-select: none;
+}
+/* Animation of Answer */
+@keyframes animQuestion {
+    0%{
+        margin-top: -50%;
+    }
+    100%{
+        margin-top: initial;
+    }
+}
+:is(.answer_question_1,.answer_question_2) p{
+    color: var(--fontColor);
+    padding: 5px;
+}
+.answer_question_2 ul li{
+    list-style: none;
+}
+.answer_question_2 h4{
+    padding:7px 0 0 5px;
+}
+/* Question Answer Area End */
+
+/*==============================
+ Question Section End
+===================================*/
+
+
+/*==============================
+Media Quaries for Responsiveness
+===================================*/
+@media screen and (max-width:690px) {
+    .mainContents{
+        flex-direction: column;
+    }
+    #mainText{
+       width: 98%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .counting_group{
+        flex-direction: row;
+
+    }
+    .questions{
+        flex-direction: column;
+    }
+    .question_1,.question_2{
+        width: 100%;
+        margin: 0;
+    }
+}
+@media screen and (max-width:440px) {
+
+    .counting_group{
+        flex-direction: column;
+    }
+    .counting{
+        width: 98%;
+    }
+}
+
